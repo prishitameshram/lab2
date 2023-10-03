@@ -1,11 +1,11 @@
 /* Flexbox Part 1 */
 #flex-section1 ul {
-	padding: 0px 10px 0px 10px; 
-	display: flex;
-	list-style-type: none;
+	padding: 0px 10px 0px 10px; /* padding for the boxes view around text */
+	display: flex; /* making it horizontal */
+	list-style-type: none; /* making it horizontal */
 	margin-left: 20px;
 	margin-right: 20px;
-	justify-content: space-between;
+	justify-content: space-between; /* adding space in between */
   }
   
   #flex-section1 li {
@@ -14,10 +14,10 @@
   
   #flex-section1 a.btn {
 	text-decoration: none;
-	background-color: #d31111; /* Background color for the buttons */
-	color: #fff; /* Text color for the buttons */
-	padding: 8px 16px 8px 16px;; /* Adjust padding as needed */
-	border-radius: 5px; /* Rounded corners for the buttons */
+	background-color: #d31111; /* Bg color for the buttons */
+	color: #fff; 
+	padding: 8px 16px 8px 16px;; 
+	border-radius: 5px; /* Rounded corners effect */
   }
 
   
@@ -28,17 +28,17 @@
 
 #flex-section2 ul {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-wrap: wrap; /* wrapping effect for desired result */
+	justify-content: space-between; /* space added */
 	flex-direction: row;
-	padding: 0;
+	padding: 0; /* no padding needed */
 	list-style: none;
   }
   
 
 #flex-section2 li {
 	flex: 1;
-	padding: 10px;
+	padding: 10px; /* padding for better look */
 	box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@
 }
 
 #flex-section2 .item2 {
-	order: 3;
+	order: 3;  /* changing order for desired results */
 }
 
 #flex-section2 .item3 {
@@ -61,24 +61,24 @@
 
 #flex-section3 .box {
 	display: flex;
-	align-items: center; /* Center vertically */
-	justify-content: center; /* Center horizontally */
-	flex-direction: column; /* Stack child elements vertically */
+	align-items: center; /* Center vertical */
+	justify-content: center; /* Center horizontal */
+	flex-direction: column; 
   }
   
   #flex-section3 .tags ul {
 	list-style: none;
 	padding: 0px 5px 0px 5px;
 	display: flex;
-	flex-wrap: wrap; /* Allow tags to wrap when there's not enough space */
-	gap: 5px; /* Add some space between tags */
+	flex-wrap: wrap; /* Allowing tags to wrap when there's not enough space */
+	gap: 5px; 
   }
   
   #flex-section3 .tags li {
-	background-color: #dad6d6;
+	background-color: #dad6d6;  /* giving bg color */
 	padding: 3px;
 	border-radius: 5px;
-	margin: 2px;
+	margin: 2px;  /* giving margin for desired result */
   }
   
 
@@ -89,13 +89,13 @@
 
 #grid-section1 .grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);  /* giving legth */
+	grid-gap: 20px;  /* spacing */
 	grid-auto-rows: 100px;
   }
   
   #grid-section1 .greybox {
-	background-color: lightgray;
+	background-color: lightgray;  /* bg color added*/
 	text-align: left;
 	padding: 10px;
   }
@@ -107,19 +107,19 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-	grid-row: 1 / span 4;    /* Position the blue box in rows 1 and 3 */
-	grid-column: 2 / span 2; /* Position the blue box in columns 2 and 3 */
-	background-color: rgb(29, 29, 153);  /* Set background color to blue */
+	grid-row: 1 / span 4;    /* Positioned the blue for desired results */
+	grid-column: 2 / span 2; /* Positioned the blue box for desired results */
+	background-color: rgb(29, 29, 153);  
 	opacity: 0.6;
-	z-index: 1;              /* Ensure the blue box is on top */
+	z-index: 1;              /* Ensuring the blue box is on top */
   }
   
   #grid-section2 .gridboxred {
-	grid-row: 2 / span 1;    /* Position the red box in rows 1 and 2 */
-	grid-column: 1 / span 2; /* Position the red box in columns 1 and 2 */
-	background-color: rgb(178, 45, 45);   /* Set background color to red */
+	grid-row: 2 / span 1;    /* Positioned the red box for desired results */
+	grid-column: 1 / span 2; /* Positioned the red box for desired results */
+	background-color: rgb(178, 45, 45);   
 	opacity: 0.8;
-	z-index: 0;              /* Ensure the red box is below the blue box */
+	z-index: 0;              /* Ensuring the red box is below */
   }
   
 
@@ -130,29 +130,30 @@
 
 #grid-section3 .grid {
 	display: grid;
-	grid-template-columns: 2fr 1fr; /* 2 columns with a 2:1 ratio */
-	grid-template-rows: 100px 300px 100px; /* 3 rows with specified heights */
-	gap: 10px; /* 10px gap between rows and columns */
+	grid-template-columns: 2fr 1fr; /* keeping 2 columns with a 2:1 ratio */
+	grid-template-rows: 100px 300px 100px; /* rows given specified heights */
+	gap: 10px; /* added space */
   }
   
   #grid-section3 .box1 {
-	grid-row: 1 / span 1; /* Spans 2 rows (1 and 2) */
-	grid-column: 1 / span 2; /* Spans 1 column (1) */
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 1; 
   }
   
   #grid-section3 .box2 {
-	grid-row: 2 / span 1; /* Spans 1 row (2) */
-	grid-column: 2 / span 1; /* Spans 1 column (2) */
+	grid-row: 2 / span 1; 
+	grid-column: 2 / span 1; 
   }
   
   #grid-section3 .box3 {
-	grid-row: 2 / span 1; /* Spans 1 row (1) */
-	grid-column: 1 / span 1; /* Spans 1 column (2) */
+	grid-column: 1 / span 1; 
+	grid-row: 2 / span 1; 
+	
   }
   
   #grid-section3 .box4 {
-	grid-row: 3 / span 1; /* Spans 1 row (3) */
-	grid-column: 1 / span 2; /* Spans 2 columns (1 and 2) */
+	grid-row: 3 / span 1; 
+	grid-column: 1 / span 2; 
   }
   
 
@@ -166,14 +167,14 @@
 	background-color: #ccc;
 	color: #000;
 	padding: 20px;
-	text-decoration: none;
-	transition: background-color 3s ease, color 0.5s ease; /* Add transition properties */
+	text-decoration: none; /* no font added */
+	transition: background-color 3s ease, color 0.5s ease; /* Adding transition for desried results */
   }
   
   #transition-section .box a:hover {
-	background-color: #cc0000;
+	background-color: #cc0000; /* Bg color - keeping same */
 	color: #fff;
-	transition: background-color 0.5s ease, color 0.5s ease; /* Add transition properties */
+	transition: background-color 0.5s ease, color 0.5s ease; /* Adding transition for desried results  */
   }
   
 
